@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+  Name: Bilal Zahid
+  Date: 09.26.2024
+  CSC 372-01
+
+  This is the meal plan page for assignment 3. It lists the recommendations I had
+  listed before along with their price. The user can select them and it will add up their
+  total.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Plan</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Meal Plan Creation</h1>
+        <nav>
+            <a href="index.html">Back to Recommendations</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="dish-list">
+                <h2>Recommended Dishes</h2>
+                <ul id="dishList">
+                    <li id="HotChocolate" data-price="3.50">Hot Chocolate - $3.50</li>
+                    <li id="IcedHazelnutLatte" data-price="4.50">Iced Hazelnut Latte - $4.50</li>
+                    <li id="FrenchVanillaRoast" data-price="4.00">French Vanilla Roast - $4.00</li>
+                    <li id="StirFriedUdonNoodles" data-price="8.99">Stir Fried Udon Noodles with Beef - $8.99</li>
+                    <li id="TofuDumplings" data-price="6.50">Tofu Dumplings - $6.50</li>
+                    <li id="Tteokbokki" data-price="7.00">Tteokbokki Rice Cakes - $7.00</li>
+                    <li id="BlazingHotBonelessWings" data-price="6.99">Blazing Hot Boneless Wings - $6.99</li>
+                    <li id="SpicyGarlicBonelessWings" data-price="6.99">Spicy Garlic Boneless Wings - $6.99</li>
+                    <li id="LemonPepperBonelessWings" data-price="6.99">Lemon Pepper Boneless Wings - $6.99</li>
+                </ul>
+            </div>
+            <div class="meal-plan">
+                <h2>Your Meal Plan</h2>
+                <div id="selectedDishes"></div>
+                <p>Total: <span id="totalPrice">$0.00</span></p>
+            </div>
+        </div>
+    </main>
+    <script src="js/meal-plan.js"></script>
+</body>
+</html>

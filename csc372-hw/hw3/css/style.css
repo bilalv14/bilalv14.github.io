@@ -1,0 +1,100 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #007BFF;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+h1, h2 {
+    margin: 10px 0;
+}
+
+/* Layout styling */
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: #ffffff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.flex-container img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.flex-container img:hover, .flex-container img:focus {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.description {
+    margin-top: 10px;
+    display: none;
+}
+
+/* Responsive flex container design */
+@media (max-width: 600px) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .flex-container img {
+        margin: 0 auto;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.dish-list, .meal-plan {
+    width: 48%;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.dish-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.dish-list li {
+    padding: 10px;
+    background-color: #f0f0f0;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.dish-list li:hover {
+    background-color: #e0e0e0;
+}
