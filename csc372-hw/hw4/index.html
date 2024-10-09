@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <a href="https://bilalv14.github.io/index.html" class="github-link">Github Landing Page</a>
+    <div class="game-container">
+        <h1>Rock Paper Scissors</h1>
+        <div id="player-throw">
+            <img src="images/rock.PNG" id="rock" class="choice" alt="Rock">
+            <img src="images/paper.PNG" id="paper" class="choice" alt="Paper">
+            <img src="images/scissors.PNG" id="scissors" class="choice" alt="Scissors">
+        </div>
+        <div id="computer-throw">
+            <img src="images/question-mark.PNG" id="computer-choice" alt="Computer's choice">
+        </div>
+        <div id="outcome">
+            <p>Choose your weapon!</p>
+        </div>
+        <div id="scoreboard">
+            <p>Wins: <span id="wins">0</span></p>
+            <p>Losses: <span id="losses">0</span></p>
+            <p>Ties: <span id="ties">0</span></p>
+        </div>
+        <button onclick="resetGame()">Reset Game</button>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
